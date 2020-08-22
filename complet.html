@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Tab Bar</title>
+    <style type="text/css">
+        .dt_ip {
+          border-radius: 5px;
+          border: 1px solid #aaa;
+          background: #aaa;
+        }
+        .w3-container {
+          padding: 10px 2px;
+        }
+        .active {
+          background: #ffd93f;
+        }
+      </style>
+</head>
+<body>
+    <div class="w3-container">
+        <div
+          class="w3-bar w3-grey"
+          style="border-radius: 5px; border: none; margin-bottom: 10px;"
+        >
+         <button
+            class="w3-bar-item w3-button tablink active"
+            style="width: 50%;"
+            onclick="clickTab(event,'tab1')"
+          >
+           Click Tab 1
+          </button>
+         <button
+            class="w3-bar-item w3-button tablink"
+            style="width: 50%;"
+            onclick="clickTab(event, 'tab2')"
+          >
+           click Tab 2
+          </button>
+        </div>
+  
+        <div
+          id="tab1"
+          class="w3-container1 con"
+          style="border-radius: 5px; border: none;"
+        >
+          <img       
+            width="100%"
+            class="dt_ip"
+            src="./1.svg"
+          ></img>
+        </div>
+  
+        <div id="tab2" class="w3-container1 con" style="display: none;">
+          <img          
+            width="100%"
+            class="dt_ip"
+            src="./2.svg"
+          ></img>
+        </div>
+      </div>
+      <script src="./app.js"></script>      
+    
+</body>
+</html>
